@@ -1,5 +1,5 @@
 syntax = "proto3";
-package user;
+package proto;
 
 
 enum Sex {
@@ -34,15 +34,17 @@ message GetRequest {
 }
 
 message GetResponse {
-  User user = 1;
+  Status status = 1;
+  string message = 2;
+  User user = 3;
 }
 
-message FindRequest {
-  repeated string names = 1;
-}
+message GetAllRequest {}
 
-message FindResponse {
-  repeated User users = 1;
+message GetAllResponse {
+  Status status = 1;
+  string message = 2;
+  repeated User users = 3;
 }
 
 message UpdateRequest {
@@ -65,15 +67,14 @@ message DeleteResponse {
   string message = 2;
 }
 
+
 service UserService {
   // CREATE
   rpc Create(CreateRequest) returns (CreateResponse);
 
   // READ
   rpc Get(GetRequest) returns (GetResponse);
-
-  // FIND
-  rpc Find(FindRequest) returns (FindResponse);
+  rpc GetAll(GetAllRequest) returns (GetAllResponse);
 
   // UPDATE
   rpc Update(UpdateRequest) returns (UpdateResponse);
