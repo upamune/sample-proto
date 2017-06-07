@@ -9,13 +9,15 @@ import (
 
 func main() {
 
-	l, err := net.Listen("tcp", ":50051")
+	port := "50051"
+	l, err := net.Listen("tcp", ":"+port)
 	if err != nil {
 		log.Fatal(err)
 	}
 	srv := grpc.NewServer()
 	proto.RegisterUserServiceServer(srv, &UserServer{})
 
+	log.Println("Starting server port:", port)
 	if err := srv.Serve(l); err != nil {
 		log.Fatal(err)
 	}
