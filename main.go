@@ -15,7 +15,9 @@ func main() {
 		log.Fatal(err)
 	}
 	srv := grpc.NewServer()
-	proto.RegisterUserServiceServer(srv, &UserServer{})
+	proto.RegisterUserServiceServer(srv, &UserServer{
+		store: make(map[string]User),
+	})
 
 	log.Println("Starting server port:", port)
 	if err := srv.Serve(l); err != nil {
