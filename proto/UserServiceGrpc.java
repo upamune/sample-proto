@@ -34,8 +34,8 @@ public final class UserServiceGrpc {
           io.grpc.MethodDescriptor.MethodType.UNARY,
           generateFullMethodName(
               "proto.UserService", "Create"),
-          io.grpc.protobuf.ProtoUtils.marshaller(proto.UserOuterClass.CreateRequest.getDefaultInstance()),
-          io.grpc.protobuf.ProtoUtils.marshaller(proto.UserOuterClass.CreateResponse.getDefaultInstance()));
+          io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(proto.UserOuterClass.CreateRequest.getDefaultInstance()),
+          io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(proto.UserOuterClass.CreateResponse.getDefaultInstance()));
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static final io.grpc.MethodDescriptor<proto.UserOuterClass.GetRequest,
       proto.UserOuterClass.GetResponse> METHOD_GET =
@@ -43,8 +43,8 @@ public final class UserServiceGrpc {
           io.grpc.MethodDescriptor.MethodType.UNARY,
           generateFullMethodName(
               "proto.UserService", "Get"),
-          io.grpc.protobuf.ProtoUtils.marshaller(proto.UserOuterClass.GetRequest.getDefaultInstance()),
-          io.grpc.protobuf.ProtoUtils.marshaller(proto.UserOuterClass.GetResponse.getDefaultInstance()));
+          io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(proto.UserOuterClass.GetRequest.getDefaultInstance()),
+          io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(proto.UserOuterClass.GetResponse.getDefaultInstance()));
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static final io.grpc.MethodDescriptor<proto.UserOuterClass.GetAllRequest,
       proto.UserOuterClass.GetAllResponse> METHOD_GET_ALL =
@@ -52,8 +52,8 @@ public final class UserServiceGrpc {
           io.grpc.MethodDescriptor.MethodType.UNARY,
           generateFullMethodName(
               "proto.UserService", "GetAll"),
-          io.grpc.protobuf.ProtoUtils.marshaller(proto.UserOuterClass.GetAllRequest.getDefaultInstance()),
-          io.grpc.protobuf.ProtoUtils.marshaller(proto.UserOuterClass.GetAllResponse.getDefaultInstance()));
+          io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(proto.UserOuterClass.GetAllRequest.getDefaultInstance()),
+          io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(proto.UserOuterClass.GetAllResponse.getDefaultInstance()));
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static final io.grpc.MethodDescriptor<proto.UserOuterClass.UpdateRequest,
       proto.UserOuterClass.UpdateResponse> METHOD_UPDATE =
@@ -61,8 +61,8 @@ public final class UserServiceGrpc {
           io.grpc.MethodDescriptor.MethodType.UNARY,
           generateFullMethodName(
               "proto.UserService", "Update"),
-          io.grpc.protobuf.ProtoUtils.marshaller(proto.UserOuterClass.UpdateRequest.getDefaultInstance()),
-          io.grpc.protobuf.ProtoUtils.marshaller(proto.UserOuterClass.UpdateResponse.getDefaultInstance()));
+          io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(proto.UserOuterClass.UpdateRequest.getDefaultInstance()),
+          io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(proto.UserOuterClass.UpdateResponse.getDefaultInstance()));
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static final io.grpc.MethodDescriptor<proto.UserOuterClass.DeleteRequest,
       proto.UserOuterClass.DeleteResponse> METHOD_DELETE =
@@ -70,8 +70,8 @@ public final class UserServiceGrpc {
           io.grpc.MethodDescriptor.MethodType.UNARY,
           generateFullMethodName(
               "proto.UserService", "Delete"),
-          io.grpc.protobuf.ProtoUtils.marshaller(proto.UserOuterClass.DeleteRequest.getDefaultInstance()),
-          io.grpc.protobuf.ProtoUtils.marshaller(proto.UserOuterClass.DeleteResponse.getDefaultInstance()));
+          io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(proto.UserOuterClass.DeleteRequest.getDefaultInstance()),
+          io.grpc.protobuf.lite.ProtoLiteUtils.marshaller(proto.UserOuterClass.DeleteResponse.getDefaultInstance()));
 
   /**
    * Creates a new async stub that supports all call types for the service
@@ -455,13 +455,6 @@ public final class UserServiceGrpc {
     }
   }
 
-  private static final class UserServiceDescriptorSupplier implements io.grpc.protobuf.ProtoFileDescriptorSupplier {
-    @java.lang.Override
-    public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return proto.UserOuterClass.getDescriptor();
-    }
-  }
-
   private static volatile io.grpc.ServiceDescriptor serviceDescriptor;
 
   public static io.grpc.ServiceDescriptor getServiceDescriptor() {
@@ -471,7 +464,6 @@ public final class UserServiceGrpc {
         result = serviceDescriptor;
         if (result == null) {
           serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
-              .setSchemaDescriptor(new UserServiceDescriptorSupplier())
               .addMethod(METHOD_CREATE)
               .addMethod(METHOD_GET)
               .addMethod(METHOD_GET_ALL)
