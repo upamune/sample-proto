@@ -215,26 +215,26 @@ public final class UserOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     java.lang.String getName();
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     com.google.protobuf.ByteString
         getNameBytes();
 
     /**
-     * <code>optional int32 age = 2;</code>
+     * <code>int32 age = 2;</code>
      */
     int getAge();
 
     /**
-     * <code>optional .proto.Sex sex = 3;</code>
+     * <code>.proto.Sex sex = 3;</code>
      */
     int getSexValue();
     /**
-     * <code>optional .proto.Sex sex = 3;</code>
+     * <code>.proto.Sex sex = 3;</code>
      */
     proto.UserOuterClass.Sex getSex();
   }
@@ -323,7 +323,7 @@ public final class UserOuterClass {
     public static final int NAME_FIELD_NUMBER = 1;
     private volatile java.lang.Object name_;
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -338,7 +338,7 @@ public final class UserOuterClass {
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -357,7 +357,7 @@ public final class UserOuterClass {
     public static final int AGE_FIELD_NUMBER = 2;
     private int age_;
     /**
-     * <code>optional int32 age = 2;</code>
+     * <code>int32 age = 2;</code>
      */
     public int getAge() {
       return age_;
@@ -366,13 +366,13 @@ public final class UserOuterClass {
     public static final int SEX_FIELD_NUMBER = 3;
     private int sex_;
     /**
-     * <code>optional .proto.Sex sex = 3;</code>
+     * <code>.proto.Sex sex = 3;</code>
      */
     public int getSexValue() {
       return sex_;
     }
     /**
-     * <code>optional .proto.Sex sex = 3;</code>
+     * <code>.proto.Sex sex = 3;</code>
      */
     public proto.UserOuterClass.Sex getSex() {
       proto.UserOuterClass.Sex result = proto.UserOuterClass.Sex.valueOf(sex_);
@@ -448,7 +448,7 @@ public final class UserOuterClass {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + NAME_FIELD_NUMBER;
       hash = (53 * hash) + getName().hashCode();
       hash = (37 * hash) + AGE_FIELD_NUMBER;
@@ -683,7 +683,7 @@ public final class UserOuterClass {
 
       private java.lang.Object name_ = "";
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public java.lang.String getName() {
         java.lang.Object ref = name_;
@@ -698,7 +698,7 @@ public final class UserOuterClass {
         }
       }
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
@@ -714,7 +714,7 @@ public final class UserOuterClass {
         }
       }
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public Builder setName(
           java.lang.String value) {
@@ -727,7 +727,7 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public Builder clearName() {
         
@@ -736,7 +736,7 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public Builder setNameBytes(
           com.google.protobuf.ByteString value) {
@@ -752,13 +752,13 @@ public final class UserOuterClass {
 
       private int age_ ;
       /**
-       * <code>optional int32 age = 2;</code>
+       * <code>int32 age = 2;</code>
        */
       public int getAge() {
         return age_;
       }
       /**
-       * <code>optional int32 age = 2;</code>
+       * <code>int32 age = 2;</code>
        */
       public Builder setAge(int value) {
         
@@ -767,7 +767,7 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional int32 age = 2;</code>
+       * <code>int32 age = 2;</code>
        */
       public Builder clearAge() {
         
@@ -778,13 +778,13 @@ public final class UserOuterClass {
 
       private int sex_ = 0;
       /**
-       * <code>optional .proto.Sex sex = 3;</code>
+       * <code>.proto.Sex sex = 3;</code>
        */
       public int getSexValue() {
         return sex_;
       }
       /**
-       * <code>optional .proto.Sex sex = 3;</code>
+       * <code>.proto.Sex sex = 3;</code>
        */
       public Builder setSexValue(int value) {
         sex_ = value;
@@ -792,14 +792,14 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional .proto.Sex sex = 3;</code>
+       * <code>.proto.Sex sex = 3;</code>
        */
       public proto.UserOuterClass.Sex getSex() {
         proto.UserOuterClass.Sex result = proto.UserOuterClass.Sex.valueOf(sex_);
         return result == null ? proto.UserOuterClass.Sex.UNRECOGNIZED : result;
       }
       /**
-       * <code>optional .proto.Sex sex = 3;</code>
+       * <code>.proto.Sex sex = 3;</code>
        */
       public Builder setSex(proto.UserOuterClass.Sex value) {
         if (value == null) {
@@ -811,7 +811,7 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional .proto.Sex sex = 3;</code>
+       * <code>.proto.Sex sex = 3;</code>
        */
       public Builder clearSex() {
         
@@ -873,26 +873,26 @@ public final class UserOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     java.lang.String getName();
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     com.google.protobuf.ByteString
         getNameBytes();
 
     /**
-     * <code>optional int32 age = 2;</code>
+     * <code>int32 age = 2;</code>
      */
     int getAge();
 
     /**
-     * <code>optional .proto.Sex sex = 3;</code>
+     * <code>.proto.Sex sex = 3;</code>
      */
     int getSexValue();
     /**
-     * <code>optional .proto.Sex sex = 3;</code>
+     * <code>.proto.Sex sex = 3;</code>
      */
     proto.UserOuterClass.Sex getSex();
   }
@@ -981,7 +981,7 @@ public final class UserOuterClass {
     public static final int NAME_FIELD_NUMBER = 1;
     private volatile java.lang.Object name_;
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -996,7 +996,7 @@ public final class UserOuterClass {
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -1015,7 +1015,7 @@ public final class UserOuterClass {
     public static final int AGE_FIELD_NUMBER = 2;
     private int age_;
     /**
-     * <code>optional int32 age = 2;</code>
+     * <code>int32 age = 2;</code>
      */
     public int getAge() {
       return age_;
@@ -1024,13 +1024,13 @@ public final class UserOuterClass {
     public static final int SEX_FIELD_NUMBER = 3;
     private int sex_;
     /**
-     * <code>optional .proto.Sex sex = 3;</code>
+     * <code>.proto.Sex sex = 3;</code>
      */
     public int getSexValue() {
       return sex_;
     }
     /**
-     * <code>optional .proto.Sex sex = 3;</code>
+     * <code>.proto.Sex sex = 3;</code>
      */
     public proto.UserOuterClass.Sex getSex() {
       proto.UserOuterClass.Sex result = proto.UserOuterClass.Sex.valueOf(sex_);
@@ -1106,7 +1106,7 @@ public final class UserOuterClass {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + NAME_FIELD_NUMBER;
       hash = (53 * hash) + getName().hashCode();
       hash = (37 * hash) + AGE_FIELD_NUMBER;
@@ -1341,7 +1341,7 @@ public final class UserOuterClass {
 
       private java.lang.Object name_ = "";
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public java.lang.String getName() {
         java.lang.Object ref = name_;
@@ -1356,7 +1356,7 @@ public final class UserOuterClass {
         }
       }
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
@@ -1372,7 +1372,7 @@ public final class UserOuterClass {
         }
       }
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public Builder setName(
           java.lang.String value) {
@@ -1385,7 +1385,7 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public Builder clearName() {
         
@@ -1394,7 +1394,7 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public Builder setNameBytes(
           com.google.protobuf.ByteString value) {
@@ -1410,13 +1410,13 @@ public final class UserOuterClass {
 
       private int age_ ;
       /**
-       * <code>optional int32 age = 2;</code>
+       * <code>int32 age = 2;</code>
        */
       public int getAge() {
         return age_;
       }
       /**
-       * <code>optional int32 age = 2;</code>
+       * <code>int32 age = 2;</code>
        */
       public Builder setAge(int value) {
         
@@ -1425,7 +1425,7 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional int32 age = 2;</code>
+       * <code>int32 age = 2;</code>
        */
       public Builder clearAge() {
         
@@ -1436,13 +1436,13 @@ public final class UserOuterClass {
 
       private int sex_ = 0;
       /**
-       * <code>optional .proto.Sex sex = 3;</code>
+       * <code>.proto.Sex sex = 3;</code>
        */
       public int getSexValue() {
         return sex_;
       }
       /**
-       * <code>optional .proto.Sex sex = 3;</code>
+       * <code>.proto.Sex sex = 3;</code>
        */
       public Builder setSexValue(int value) {
         sex_ = value;
@@ -1450,14 +1450,14 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional .proto.Sex sex = 3;</code>
+       * <code>.proto.Sex sex = 3;</code>
        */
       public proto.UserOuterClass.Sex getSex() {
         proto.UserOuterClass.Sex result = proto.UserOuterClass.Sex.valueOf(sex_);
         return result == null ? proto.UserOuterClass.Sex.UNRECOGNIZED : result;
       }
       /**
-       * <code>optional .proto.Sex sex = 3;</code>
+       * <code>.proto.Sex sex = 3;</code>
        */
       public Builder setSex(proto.UserOuterClass.Sex value) {
         if (value == null) {
@@ -1469,7 +1469,7 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional .proto.Sex sex = 3;</code>
+       * <code>.proto.Sex sex = 3;</code>
        */
       public Builder clearSex() {
         
@@ -1531,20 +1531,20 @@ public final class UserOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional .proto.Status status = 1;</code>
+     * <code>.proto.Status status = 1;</code>
      */
     int getStatusValue();
     /**
-     * <code>optional .proto.Status status = 1;</code>
+     * <code>.proto.Status status = 1;</code>
      */
     proto.UserOuterClass.Status getStatus();
 
     /**
-     * <code>optional string message = 2;</code>
+     * <code>string message = 2;</code>
      */
     java.lang.String getMessage();
     /**
-     * <code>optional string message = 2;</code>
+     * <code>string message = 2;</code>
      */
     com.google.protobuf.ByteString
         getMessageBytes();
@@ -1628,13 +1628,13 @@ public final class UserOuterClass {
     public static final int STATUS_FIELD_NUMBER = 1;
     private int status_;
     /**
-     * <code>optional .proto.Status status = 1;</code>
+     * <code>.proto.Status status = 1;</code>
      */
     public int getStatusValue() {
       return status_;
     }
     /**
-     * <code>optional .proto.Status status = 1;</code>
+     * <code>.proto.Status status = 1;</code>
      */
     public proto.UserOuterClass.Status getStatus() {
       proto.UserOuterClass.Status result = proto.UserOuterClass.Status.valueOf(status_);
@@ -1644,7 +1644,7 @@ public final class UserOuterClass {
     public static final int MESSAGE_FIELD_NUMBER = 2;
     private volatile java.lang.Object message_;
     /**
-     * <code>optional string message = 2;</code>
+     * <code>string message = 2;</code>
      */
     public java.lang.String getMessage() {
       java.lang.Object ref = message_;
@@ -1659,7 +1659,7 @@ public final class UserOuterClass {
       }
     }
     /**
-     * <code>optional string message = 2;</code>
+     * <code>string message = 2;</code>
      */
     public com.google.protobuf.ByteString
         getMessageBytes() {
@@ -1735,7 +1735,7 @@ public final class UserOuterClass {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + STATUS_FIELD_NUMBER;
       hash = (53 * hash) + status_;
       hash = (37 * hash) + MESSAGE_FIELD_NUMBER;
@@ -1962,13 +1962,13 @@ public final class UserOuterClass {
 
       private int status_ = 0;
       /**
-       * <code>optional .proto.Status status = 1;</code>
+       * <code>.proto.Status status = 1;</code>
        */
       public int getStatusValue() {
         return status_;
       }
       /**
-       * <code>optional .proto.Status status = 1;</code>
+       * <code>.proto.Status status = 1;</code>
        */
       public Builder setStatusValue(int value) {
         status_ = value;
@@ -1976,14 +1976,14 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional .proto.Status status = 1;</code>
+       * <code>.proto.Status status = 1;</code>
        */
       public proto.UserOuterClass.Status getStatus() {
         proto.UserOuterClass.Status result = proto.UserOuterClass.Status.valueOf(status_);
         return result == null ? proto.UserOuterClass.Status.UNRECOGNIZED : result;
       }
       /**
-       * <code>optional .proto.Status status = 1;</code>
+       * <code>.proto.Status status = 1;</code>
        */
       public Builder setStatus(proto.UserOuterClass.Status value) {
         if (value == null) {
@@ -1995,7 +1995,7 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional .proto.Status status = 1;</code>
+       * <code>.proto.Status status = 1;</code>
        */
       public Builder clearStatus() {
         
@@ -2006,7 +2006,7 @@ public final class UserOuterClass {
 
       private java.lang.Object message_ = "";
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public java.lang.String getMessage() {
         java.lang.Object ref = message_;
@@ -2021,7 +2021,7 @@ public final class UserOuterClass {
         }
       }
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public com.google.protobuf.ByteString
           getMessageBytes() {
@@ -2037,7 +2037,7 @@ public final class UserOuterClass {
         }
       }
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public Builder setMessage(
           java.lang.String value) {
@@ -2050,7 +2050,7 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public Builder clearMessage() {
         
@@ -2059,7 +2059,7 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public Builder setMessageBytes(
           com.google.protobuf.ByteString value) {
@@ -2126,11 +2126,11 @@ public final class UserOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     java.lang.String getName();
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     com.google.protobuf.ByteString
         getNameBytes();
@@ -2207,7 +2207,7 @@ public final class UserOuterClass {
     public static final int NAME_FIELD_NUMBER = 1;
     private volatile java.lang.Object name_;
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -2222,7 +2222,7 @@ public final class UserOuterClass {
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -2290,7 +2290,7 @@ public final class UserOuterClass {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + NAME_FIELD_NUMBER;
       hash = (53 * hash) + getName().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -2509,7 +2509,7 @@ public final class UserOuterClass {
 
       private java.lang.Object name_ = "";
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public java.lang.String getName() {
         java.lang.Object ref = name_;
@@ -2524,7 +2524,7 @@ public final class UserOuterClass {
         }
       }
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
@@ -2540,7 +2540,7 @@ public final class UserOuterClass {
         }
       }
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public Builder setName(
           java.lang.String value) {
@@ -2553,7 +2553,7 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public Builder clearName() {
         
@@ -2562,7 +2562,7 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public Builder setNameBytes(
           com.google.protobuf.ByteString value) {
@@ -2629,34 +2629,34 @@ public final class UserOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional .proto.Status status = 1;</code>
+     * <code>.proto.Status status = 1;</code>
      */
     int getStatusValue();
     /**
-     * <code>optional .proto.Status status = 1;</code>
+     * <code>.proto.Status status = 1;</code>
      */
     proto.UserOuterClass.Status getStatus();
 
     /**
-     * <code>optional string message = 2;</code>
+     * <code>string message = 2;</code>
      */
     java.lang.String getMessage();
     /**
-     * <code>optional string message = 2;</code>
+     * <code>string message = 2;</code>
      */
     com.google.protobuf.ByteString
         getMessageBytes();
 
     /**
-     * <code>optional .proto.User user = 3;</code>
+     * <code>.proto.User user = 3;</code>
      */
     boolean hasUser();
     /**
-     * <code>optional .proto.User user = 3;</code>
+     * <code>.proto.User user = 3;</code>
      */
     proto.UserOuterClass.User getUser();
     /**
-     * <code>optional .proto.User user = 3;</code>
+     * <code>.proto.User user = 3;</code>
      */
     proto.UserOuterClass.UserOrBuilder getUserOrBuilder();
   }
@@ -2752,13 +2752,13 @@ public final class UserOuterClass {
     public static final int STATUS_FIELD_NUMBER = 1;
     private int status_;
     /**
-     * <code>optional .proto.Status status = 1;</code>
+     * <code>.proto.Status status = 1;</code>
      */
     public int getStatusValue() {
       return status_;
     }
     /**
-     * <code>optional .proto.Status status = 1;</code>
+     * <code>.proto.Status status = 1;</code>
      */
     public proto.UserOuterClass.Status getStatus() {
       proto.UserOuterClass.Status result = proto.UserOuterClass.Status.valueOf(status_);
@@ -2768,7 +2768,7 @@ public final class UserOuterClass {
     public static final int MESSAGE_FIELD_NUMBER = 2;
     private volatile java.lang.Object message_;
     /**
-     * <code>optional string message = 2;</code>
+     * <code>string message = 2;</code>
      */
     public java.lang.String getMessage() {
       java.lang.Object ref = message_;
@@ -2783,7 +2783,7 @@ public final class UserOuterClass {
       }
     }
     /**
-     * <code>optional string message = 2;</code>
+     * <code>string message = 2;</code>
      */
     public com.google.protobuf.ByteString
         getMessageBytes() {
@@ -2802,19 +2802,19 @@ public final class UserOuterClass {
     public static final int USER_FIELD_NUMBER = 3;
     private proto.UserOuterClass.User user_;
     /**
-     * <code>optional .proto.User user = 3;</code>
+     * <code>.proto.User user = 3;</code>
      */
     public boolean hasUser() {
       return user_ != null;
     }
     /**
-     * <code>optional .proto.User user = 3;</code>
+     * <code>.proto.User user = 3;</code>
      */
     public proto.UserOuterClass.User getUser() {
       return user_ == null ? proto.UserOuterClass.User.getDefaultInstance() : user_;
     }
     /**
-     * <code>optional .proto.User user = 3;</code>
+     * <code>.proto.User user = 3;</code>
      */
     public proto.UserOuterClass.UserOrBuilder getUserOrBuilder() {
       return getUser();
@@ -2892,7 +2892,7 @@ public final class UserOuterClass {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + STATUS_FIELD_NUMBER;
       hash = (53 * hash) + status_;
       hash = (37 * hash) + MESSAGE_FIELD_NUMBER;
@@ -3137,13 +3137,13 @@ public final class UserOuterClass {
 
       private int status_ = 0;
       /**
-       * <code>optional .proto.Status status = 1;</code>
+       * <code>.proto.Status status = 1;</code>
        */
       public int getStatusValue() {
         return status_;
       }
       /**
-       * <code>optional .proto.Status status = 1;</code>
+       * <code>.proto.Status status = 1;</code>
        */
       public Builder setStatusValue(int value) {
         status_ = value;
@@ -3151,14 +3151,14 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional .proto.Status status = 1;</code>
+       * <code>.proto.Status status = 1;</code>
        */
       public proto.UserOuterClass.Status getStatus() {
         proto.UserOuterClass.Status result = proto.UserOuterClass.Status.valueOf(status_);
         return result == null ? proto.UserOuterClass.Status.UNRECOGNIZED : result;
       }
       /**
-       * <code>optional .proto.Status status = 1;</code>
+       * <code>.proto.Status status = 1;</code>
        */
       public Builder setStatus(proto.UserOuterClass.Status value) {
         if (value == null) {
@@ -3170,7 +3170,7 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional .proto.Status status = 1;</code>
+       * <code>.proto.Status status = 1;</code>
        */
       public Builder clearStatus() {
         
@@ -3181,7 +3181,7 @@ public final class UserOuterClass {
 
       private java.lang.Object message_ = "";
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public java.lang.String getMessage() {
         java.lang.Object ref = message_;
@@ -3196,7 +3196,7 @@ public final class UserOuterClass {
         }
       }
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public com.google.protobuf.ByteString
           getMessageBytes() {
@@ -3212,7 +3212,7 @@ public final class UserOuterClass {
         }
       }
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public Builder setMessage(
           java.lang.String value) {
@@ -3225,7 +3225,7 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public Builder clearMessage() {
         
@@ -3234,7 +3234,7 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public Builder setMessageBytes(
           com.google.protobuf.ByteString value) {
@@ -3252,13 +3252,13 @@ public final class UserOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           proto.UserOuterClass.User, proto.UserOuterClass.User.Builder, proto.UserOuterClass.UserOrBuilder> userBuilder_;
       /**
-       * <code>optional .proto.User user = 3;</code>
+       * <code>.proto.User user = 3;</code>
        */
       public boolean hasUser() {
         return userBuilder_ != null || user_ != null;
       }
       /**
-       * <code>optional .proto.User user = 3;</code>
+       * <code>.proto.User user = 3;</code>
        */
       public proto.UserOuterClass.User getUser() {
         if (userBuilder_ == null) {
@@ -3268,7 +3268,7 @@ public final class UserOuterClass {
         }
       }
       /**
-       * <code>optional .proto.User user = 3;</code>
+       * <code>.proto.User user = 3;</code>
        */
       public Builder setUser(proto.UserOuterClass.User value) {
         if (userBuilder_ == null) {
@@ -3284,7 +3284,7 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional .proto.User user = 3;</code>
+       * <code>.proto.User user = 3;</code>
        */
       public Builder setUser(
           proto.UserOuterClass.User.Builder builderForValue) {
@@ -3298,7 +3298,7 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional .proto.User user = 3;</code>
+       * <code>.proto.User user = 3;</code>
        */
       public Builder mergeUser(proto.UserOuterClass.User value) {
         if (userBuilder_ == null) {
@@ -3316,7 +3316,7 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional .proto.User user = 3;</code>
+       * <code>.proto.User user = 3;</code>
        */
       public Builder clearUser() {
         if (userBuilder_ == null) {
@@ -3330,7 +3330,7 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional .proto.User user = 3;</code>
+       * <code>.proto.User user = 3;</code>
        */
       public proto.UserOuterClass.User.Builder getUserBuilder() {
         
@@ -3338,7 +3338,7 @@ public final class UserOuterClass {
         return getUserFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .proto.User user = 3;</code>
+       * <code>.proto.User user = 3;</code>
        */
       public proto.UserOuterClass.UserOrBuilder getUserOrBuilder() {
         if (userBuilder_ != null) {
@@ -3349,7 +3349,7 @@ public final class UserOuterClass {
         }
       }
       /**
-       * <code>optional .proto.User user = 3;</code>
+       * <code>.proto.User user = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           proto.UserOuterClass.User, proto.UserOuterClass.User.Builder, proto.UserOuterClass.UserOrBuilder> 
@@ -3522,7 +3522,7 @@ public final class UserOuterClass {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -3783,20 +3783,20 @@ public final class UserOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional .proto.Status status = 1;</code>
+     * <code>.proto.Status status = 1;</code>
      */
     int getStatusValue();
     /**
-     * <code>optional .proto.Status status = 1;</code>
+     * <code>.proto.Status status = 1;</code>
      */
     proto.UserOuterClass.Status getStatus();
 
     /**
-     * <code>optional string message = 2;</code>
+     * <code>string message = 2;</code>
      */
     java.lang.String getMessage();
     /**
-     * <code>optional string message = 2;</code>
+     * <code>string message = 2;</code>
      */
     com.google.protobuf.ByteString
         getMessageBytes();
@@ -3918,13 +3918,13 @@ public final class UserOuterClass {
     public static final int STATUS_FIELD_NUMBER = 1;
     private int status_;
     /**
-     * <code>optional .proto.Status status = 1;</code>
+     * <code>.proto.Status status = 1;</code>
      */
     public int getStatusValue() {
       return status_;
     }
     /**
-     * <code>optional .proto.Status status = 1;</code>
+     * <code>.proto.Status status = 1;</code>
      */
     public proto.UserOuterClass.Status getStatus() {
       proto.UserOuterClass.Status result = proto.UserOuterClass.Status.valueOf(status_);
@@ -3934,7 +3934,7 @@ public final class UserOuterClass {
     public static final int MESSAGE_FIELD_NUMBER = 2;
     private volatile java.lang.Object message_;
     /**
-     * <code>optional string message = 2;</code>
+     * <code>string message = 2;</code>
      */
     public java.lang.String getMessage() {
       java.lang.Object ref = message_;
@@ -3949,7 +3949,7 @@ public final class UserOuterClass {
       }
     }
     /**
-     * <code>optional string message = 2;</code>
+     * <code>string message = 2;</code>
      */
     public com.google.protobuf.ByteString
         getMessageBytes() {
@@ -4069,7 +4069,7 @@ public final class UserOuterClass {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + STATUS_FIELD_NUMBER;
       hash = (53 * hash) + status_;
       hash = (37 * hash) + MESSAGE_FIELD_NUMBER;
@@ -4346,13 +4346,13 @@ public final class UserOuterClass {
 
       private int status_ = 0;
       /**
-       * <code>optional .proto.Status status = 1;</code>
+       * <code>.proto.Status status = 1;</code>
        */
       public int getStatusValue() {
         return status_;
       }
       /**
-       * <code>optional .proto.Status status = 1;</code>
+       * <code>.proto.Status status = 1;</code>
        */
       public Builder setStatusValue(int value) {
         status_ = value;
@@ -4360,14 +4360,14 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional .proto.Status status = 1;</code>
+       * <code>.proto.Status status = 1;</code>
        */
       public proto.UserOuterClass.Status getStatus() {
         proto.UserOuterClass.Status result = proto.UserOuterClass.Status.valueOf(status_);
         return result == null ? proto.UserOuterClass.Status.UNRECOGNIZED : result;
       }
       /**
-       * <code>optional .proto.Status status = 1;</code>
+       * <code>.proto.Status status = 1;</code>
        */
       public Builder setStatus(proto.UserOuterClass.Status value) {
         if (value == null) {
@@ -4379,7 +4379,7 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional .proto.Status status = 1;</code>
+       * <code>.proto.Status status = 1;</code>
        */
       public Builder clearStatus() {
         
@@ -4390,7 +4390,7 @@ public final class UserOuterClass {
 
       private java.lang.Object message_ = "";
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public java.lang.String getMessage() {
         java.lang.Object ref = message_;
@@ -4405,7 +4405,7 @@ public final class UserOuterClass {
         }
       }
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public com.google.protobuf.ByteString
           getMessageBytes() {
@@ -4421,7 +4421,7 @@ public final class UserOuterClass {
         }
       }
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public Builder setMessage(
           java.lang.String value) {
@@ -4434,7 +4434,7 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public Builder clearMessage() {
         
@@ -4443,7 +4443,7 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public Builder setMessageBytes(
           com.google.protobuf.ByteString value) {
@@ -4750,26 +4750,26 @@ public final class UserOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     java.lang.String getName();
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     com.google.protobuf.ByteString
         getNameBytes();
 
     /**
-     * <code>optional int32 age = 2;</code>
+     * <code>int32 age = 2;</code>
      */
     int getAge();
 
     /**
-     * <code>optional .proto.Sex sex = 3;</code>
+     * <code>.proto.Sex sex = 3;</code>
      */
     int getSexValue();
     /**
-     * <code>optional .proto.Sex sex = 3;</code>
+     * <code>.proto.Sex sex = 3;</code>
      */
     proto.UserOuterClass.Sex getSex();
   }
@@ -4858,7 +4858,7 @@ public final class UserOuterClass {
     public static final int NAME_FIELD_NUMBER = 1;
     private volatile java.lang.Object name_;
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -4873,7 +4873,7 @@ public final class UserOuterClass {
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -4892,7 +4892,7 @@ public final class UserOuterClass {
     public static final int AGE_FIELD_NUMBER = 2;
     private int age_;
     /**
-     * <code>optional int32 age = 2;</code>
+     * <code>int32 age = 2;</code>
      */
     public int getAge() {
       return age_;
@@ -4901,13 +4901,13 @@ public final class UserOuterClass {
     public static final int SEX_FIELD_NUMBER = 3;
     private int sex_;
     /**
-     * <code>optional .proto.Sex sex = 3;</code>
+     * <code>.proto.Sex sex = 3;</code>
      */
     public int getSexValue() {
       return sex_;
     }
     /**
-     * <code>optional .proto.Sex sex = 3;</code>
+     * <code>.proto.Sex sex = 3;</code>
      */
     public proto.UserOuterClass.Sex getSex() {
       proto.UserOuterClass.Sex result = proto.UserOuterClass.Sex.valueOf(sex_);
@@ -4983,7 +4983,7 @@ public final class UserOuterClass {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + NAME_FIELD_NUMBER;
       hash = (53 * hash) + getName().hashCode();
       hash = (37 * hash) + AGE_FIELD_NUMBER;
@@ -5218,7 +5218,7 @@ public final class UserOuterClass {
 
       private java.lang.Object name_ = "";
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public java.lang.String getName() {
         java.lang.Object ref = name_;
@@ -5233,7 +5233,7 @@ public final class UserOuterClass {
         }
       }
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
@@ -5249,7 +5249,7 @@ public final class UserOuterClass {
         }
       }
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public Builder setName(
           java.lang.String value) {
@@ -5262,7 +5262,7 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public Builder clearName() {
         
@@ -5271,7 +5271,7 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public Builder setNameBytes(
           com.google.protobuf.ByteString value) {
@@ -5287,13 +5287,13 @@ public final class UserOuterClass {
 
       private int age_ ;
       /**
-       * <code>optional int32 age = 2;</code>
+       * <code>int32 age = 2;</code>
        */
       public int getAge() {
         return age_;
       }
       /**
-       * <code>optional int32 age = 2;</code>
+       * <code>int32 age = 2;</code>
        */
       public Builder setAge(int value) {
         
@@ -5302,7 +5302,7 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional int32 age = 2;</code>
+       * <code>int32 age = 2;</code>
        */
       public Builder clearAge() {
         
@@ -5313,13 +5313,13 @@ public final class UserOuterClass {
 
       private int sex_ = 0;
       /**
-       * <code>optional .proto.Sex sex = 3;</code>
+       * <code>.proto.Sex sex = 3;</code>
        */
       public int getSexValue() {
         return sex_;
       }
       /**
-       * <code>optional .proto.Sex sex = 3;</code>
+       * <code>.proto.Sex sex = 3;</code>
        */
       public Builder setSexValue(int value) {
         sex_ = value;
@@ -5327,14 +5327,14 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional .proto.Sex sex = 3;</code>
+       * <code>.proto.Sex sex = 3;</code>
        */
       public proto.UserOuterClass.Sex getSex() {
         proto.UserOuterClass.Sex result = proto.UserOuterClass.Sex.valueOf(sex_);
         return result == null ? proto.UserOuterClass.Sex.UNRECOGNIZED : result;
       }
       /**
-       * <code>optional .proto.Sex sex = 3;</code>
+       * <code>.proto.Sex sex = 3;</code>
        */
       public Builder setSex(proto.UserOuterClass.Sex value) {
         if (value == null) {
@@ -5346,7 +5346,7 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional .proto.Sex sex = 3;</code>
+       * <code>.proto.Sex sex = 3;</code>
        */
       public Builder clearSex() {
         
@@ -5408,20 +5408,20 @@ public final class UserOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional .proto.Status status = 1;</code>
+     * <code>.proto.Status status = 1;</code>
      */
     int getStatusValue();
     /**
-     * <code>optional .proto.Status status = 1;</code>
+     * <code>.proto.Status status = 1;</code>
      */
     proto.UserOuterClass.Status getStatus();
 
     /**
-     * <code>optional string message = 2;</code>
+     * <code>string message = 2;</code>
      */
     java.lang.String getMessage();
     /**
-     * <code>optional string message = 2;</code>
+     * <code>string message = 2;</code>
      */
     com.google.protobuf.ByteString
         getMessageBytes();
@@ -5505,13 +5505,13 @@ public final class UserOuterClass {
     public static final int STATUS_FIELD_NUMBER = 1;
     private int status_;
     /**
-     * <code>optional .proto.Status status = 1;</code>
+     * <code>.proto.Status status = 1;</code>
      */
     public int getStatusValue() {
       return status_;
     }
     /**
-     * <code>optional .proto.Status status = 1;</code>
+     * <code>.proto.Status status = 1;</code>
      */
     public proto.UserOuterClass.Status getStatus() {
       proto.UserOuterClass.Status result = proto.UserOuterClass.Status.valueOf(status_);
@@ -5521,7 +5521,7 @@ public final class UserOuterClass {
     public static final int MESSAGE_FIELD_NUMBER = 2;
     private volatile java.lang.Object message_;
     /**
-     * <code>optional string message = 2;</code>
+     * <code>string message = 2;</code>
      */
     public java.lang.String getMessage() {
       java.lang.Object ref = message_;
@@ -5536,7 +5536,7 @@ public final class UserOuterClass {
       }
     }
     /**
-     * <code>optional string message = 2;</code>
+     * <code>string message = 2;</code>
      */
     public com.google.protobuf.ByteString
         getMessageBytes() {
@@ -5612,7 +5612,7 @@ public final class UserOuterClass {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + STATUS_FIELD_NUMBER;
       hash = (53 * hash) + status_;
       hash = (37 * hash) + MESSAGE_FIELD_NUMBER;
@@ -5839,13 +5839,13 @@ public final class UserOuterClass {
 
       private int status_ = 0;
       /**
-       * <code>optional .proto.Status status = 1;</code>
+       * <code>.proto.Status status = 1;</code>
        */
       public int getStatusValue() {
         return status_;
       }
       /**
-       * <code>optional .proto.Status status = 1;</code>
+       * <code>.proto.Status status = 1;</code>
        */
       public Builder setStatusValue(int value) {
         status_ = value;
@@ -5853,14 +5853,14 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional .proto.Status status = 1;</code>
+       * <code>.proto.Status status = 1;</code>
        */
       public proto.UserOuterClass.Status getStatus() {
         proto.UserOuterClass.Status result = proto.UserOuterClass.Status.valueOf(status_);
         return result == null ? proto.UserOuterClass.Status.UNRECOGNIZED : result;
       }
       /**
-       * <code>optional .proto.Status status = 1;</code>
+       * <code>.proto.Status status = 1;</code>
        */
       public Builder setStatus(proto.UserOuterClass.Status value) {
         if (value == null) {
@@ -5872,7 +5872,7 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional .proto.Status status = 1;</code>
+       * <code>.proto.Status status = 1;</code>
        */
       public Builder clearStatus() {
         
@@ -5883,7 +5883,7 @@ public final class UserOuterClass {
 
       private java.lang.Object message_ = "";
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public java.lang.String getMessage() {
         java.lang.Object ref = message_;
@@ -5898,7 +5898,7 @@ public final class UserOuterClass {
         }
       }
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public com.google.protobuf.ByteString
           getMessageBytes() {
@@ -5914,7 +5914,7 @@ public final class UserOuterClass {
         }
       }
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public Builder setMessage(
           java.lang.String value) {
@@ -5927,7 +5927,7 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public Builder clearMessage() {
         
@@ -5936,7 +5936,7 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public Builder setMessageBytes(
           com.google.protobuf.ByteString value) {
@@ -6003,11 +6003,11 @@ public final class UserOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     java.lang.String getName();
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     com.google.protobuf.ByteString
         getNameBytes();
@@ -6084,7 +6084,7 @@ public final class UserOuterClass {
     public static final int NAME_FIELD_NUMBER = 1;
     private volatile java.lang.Object name_;
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -6099,7 +6099,7 @@ public final class UserOuterClass {
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -6167,7 +6167,7 @@ public final class UserOuterClass {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + NAME_FIELD_NUMBER;
       hash = (53 * hash) + getName().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -6386,7 +6386,7 @@ public final class UserOuterClass {
 
       private java.lang.Object name_ = "";
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public java.lang.String getName() {
         java.lang.Object ref = name_;
@@ -6401,7 +6401,7 @@ public final class UserOuterClass {
         }
       }
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
@@ -6417,7 +6417,7 @@ public final class UserOuterClass {
         }
       }
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public Builder setName(
           java.lang.String value) {
@@ -6430,7 +6430,7 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public Builder clearName() {
         
@@ -6439,7 +6439,7 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public Builder setNameBytes(
           com.google.protobuf.ByteString value) {
@@ -6506,20 +6506,20 @@ public final class UserOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional .proto.Status status = 1;</code>
+     * <code>.proto.Status status = 1;</code>
      */
     int getStatusValue();
     /**
-     * <code>optional .proto.Status status = 1;</code>
+     * <code>.proto.Status status = 1;</code>
      */
     proto.UserOuterClass.Status getStatus();
 
     /**
-     * <code>optional string message = 2;</code>
+     * <code>string message = 2;</code>
      */
     java.lang.String getMessage();
     /**
-     * <code>optional string message = 2;</code>
+     * <code>string message = 2;</code>
      */
     com.google.protobuf.ByteString
         getMessageBytes();
@@ -6603,13 +6603,13 @@ public final class UserOuterClass {
     public static final int STATUS_FIELD_NUMBER = 1;
     private int status_;
     /**
-     * <code>optional .proto.Status status = 1;</code>
+     * <code>.proto.Status status = 1;</code>
      */
     public int getStatusValue() {
       return status_;
     }
     /**
-     * <code>optional .proto.Status status = 1;</code>
+     * <code>.proto.Status status = 1;</code>
      */
     public proto.UserOuterClass.Status getStatus() {
       proto.UserOuterClass.Status result = proto.UserOuterClass.Status.valueOf(status_);
@@ -6619,7 +6619,7 @@ public final class UserOuterClass {
     public static final int MESSAGE_FIELD_NUMBER = 2;
     private volatile java.lang.Object message_;
     /**
-     * <code>optional string message = 2;</code>
+     * <code>string message = 2;</code>
      */
     public java.lang.String getMessage() {
       java.lang.Object ref = message_;
@@ -6634,7 +6634,7 @@ public final class UserOuterClass {
       }
     }
     /**
-     * <code>optional string message = 2;</code>
+     * <code>string message = 2;</code>
      */
     public com.google.protobuf.ByteString
         getMessageBytes() {
@@ -6710,7 +6710,7 @@ public final class UserOuterClass {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + STATUS_FIELD_NUMBER;
       hash = (53 * hash) + status_;
       hash = (37 * hash) + MESSAGE_FIELD_NUMBER;
@@ -6937,13 +6937,13 @@ public final class UserOuterClass {
 
       private int status_ = 0;
       /**
-       * <code>optional .proto.Status status = 1;</code>
+       * <code>.proto.Status status = 1;</code>
        */
       public int getStatusValue() {
         return status_;
       }
       /**
-       * <code>optional .proto.Status status = 1;</code>
+       * <code>.proto.Status status = 1;</code>
        */
       public Builder setStatusValue(int value) {
         status_ = value;
@@ -6951,14 +6951,14 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional .proto.Status status = 1;</code>
+       * <code>.proto.Status status = 1;</code>
        */
       public proto.UserOuterClass.Status getStatus() {
         proto.UserOuterClass.Status result = proto.UserOuterClass.Status.valueOf(status_);
         return result == null ? proto.UserOuterClass.Status.UNRECOGNIZED : result;
       }
       /**
-       * <code>optional .proto.Status status = 1;</code>
+       * <code>.proto.Status status = 1;</code>
        */
       public Builder setStatus(proto.UserOuterClass.Status value) {
         if (value == null) {
@@ -6970,7 +6970,7 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional .proto.Status status = 1;</code>
+       * <code>.proto.Status status = 1;</code>
        */
       public Builder clearStatus() {
         
@@ -6981,7 +6981,7 @@ public final class UserOuterClass {
 
       private java.lang.Object message_ = "";
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public java.lang.String getMessage() {
         java.lang.Object ref = message_;
@@ -6996,7 +6996,7 @@ public final class UserOuterClass {
         }
       }
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public com.google.protobuf.ByteString
           getMessageBytes() {
@@ -7012,7 +7012,7 @@ public final class UserOuterClass {
         }
       }
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public Builder setMessage(
           java.lang.String value) {
@@ -7025,7 +7025,7 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public Builder clearMessage() {
         
@@ -7034,7 +7034,7 @@ public final class UserOuterClass {
         return this;
       }
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public Builder setMessageBytes(
           com.google.protobuf.ByteString value) {

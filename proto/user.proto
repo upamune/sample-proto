@@ -1,7 +1,6 @@
 syntax = "proto3";
 package proto;
 
-
 enum Sex {
   MALE = 0;
   FEMALE = 1;
