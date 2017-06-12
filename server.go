@@ -3,6 +3,8 @@ package main
 import (
 	"github.com/upamune/sample-proto/proto"
 	"golang.org/x/net/context"
+	"google.golang.org/grpc"
+	"google.golang.org/grpc/codes"
 )
 
 type UserServer struct {
@@ -49,10 +51,7 @@ func (s UserServer) Get(ctx context.Context, req *proto.GetRequest) (*proto.GetR
 	userName := req.Name
 	u, ok := s.store[userName]
 	if !ok {
-		return &proto.GetResponse{
-			Status:  proto.Status_FAIL,
-			Message: "no such user exists",
-		}, nil
+		return &proto.GetResponse{}, grpc.Errorf(codes.NotFound, "%s", "no such user exists")
 	}
 
 	return &proto.GetResponse{
